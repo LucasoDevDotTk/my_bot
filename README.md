@@ -18,3 +18,9 @@ colcon build --symlink-install
 1. ros2 launch my_bot rsp.launch.py use_sim_time:=true
 2. ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity bot_name
 3. ros2 launch gazebo_ros gazebo.launch.py
+
+ros2 launch my_bot launch_sim.launch.py
+
+keyboard:
+
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
